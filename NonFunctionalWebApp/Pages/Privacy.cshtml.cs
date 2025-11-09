@@ -7,13 +7,16 @@ namespace NonFunctionalWebApp.Pages
     {
         private readonly ILogger<PrivacyModel> _logger;
 
+        public string Text { get; set; }
+
         public PrivacyModel(ILogger<PrivacyModel> logger)
         {
             _logger = logger;
         }
 
-        public void OnGet()
+        public void OnGet(string text)
         {
+            Text = text;
         }
     }
 

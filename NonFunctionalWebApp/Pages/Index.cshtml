@@ -5,6 +5,10 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <form method="get" asp-page="/Privacy" class="text-center">
+        <p>
+            <input asp-for="Text" class="form-control" />
+        </p>
+        <button type="submit" class="btn btn-primary">Küldés</button>
+    </form>
 </div>
